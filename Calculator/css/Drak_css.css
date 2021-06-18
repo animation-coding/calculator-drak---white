@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root
+{
+   
+    --BxSi:6px 6px 8px rgb(0 0 0 / 50%),
+    -6px -6px 10px rgb(255 255 255 / 5%),
+     inset -8px -8px 12px rgb(255 255 255 / 5%),
+      inset 5px 5px 8px rgb(0 0 0 / 50%);
+
+    --PSD-3d:7px 7px 15px #0c0e10c9,
+     -8px -8px 15px #14191dd1,
+      inset -5px -4px 13px 0px rgb(0 0 0 / 52%),
+      inset 6px 7px 12px 0px #1b1f23cf; 
+    --BxS: -3px -3px 10px rgb(255 255 255 / 5%),
+    3px 3px 15px rgb(0 0 0 / 50%); 
+    --hoverS:inset -3px -3px 10px rgb(255 255 255 / 5%),
+    inset 3px 3px 15px rgb(0 0 0 / 50%);             
+
+    
+
+}
+
+* 
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+	background: #131419;
+}
+
+.iphone-x 
+{
+	margin-top: 20px;
+}
+
+.iphone-x .screen
+{
+    width: 42%;
+    height: 625px;
+    margin: 0 auto;
+  /*  border: 8px solid #e8eaec;*/
+    min-width: 310px;
+    max-width: 310px;
+    border-radius: 44px; 
+
+    background: #131419; 
+    padding: 8px;
+    box-shadow: var(--PSD-3d);
+}
+
+.screen .notch
+{
+    width: 159px;
+    height: 30px;
+    margin: 0px auto;
+   /* background: #e8eaece1;*/
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius:15px ;
+}
+
+.sound {
+	top: 10px;
+	left: 54px;
+	width: 40px;
+	height: 6px;
+	position: relative;
+	background: #222;
+	border-radius: 10px;
+}
+.camera {
+	top: 2px;
+	left: 110px;
+	width: 10px;
+	height: 10px;
+	position: relative;
+	background: #222;
+	border-radius: 100px;
+}
+
+.time {
+	color: #fff;
+
+	width: 60px;
+	font-size: 11px;
+	margin-top: -22px;
+	background: transparent;
+	margin-left: 18px;
+}
+
+.battery
+{
+    margin-top:-20px;
+}
+.battery i
+{
+    color:#fff!important;
+
+    margin-left: 230px !important;
+}
+.wifi
+{
+    margin-top: -22px !important;
+    margin-left: 260px;
+}
+.wifi i
+{
+    color: #fff !important;
+    margin-top: -20px;
+}
+
+.top-nav {
+	width: 100%;
+	height: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: transparent;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+
+.area
+{
+    min-width: 50% !important;
+    width: 93% !important;
+    min-height: 120px !important;
+    margin-left: -5px;
+    margin-top: -5px;
+    font-size: 30px !important;
+    text-align: center;
+    text-align: right;
+    overflow: scroll;
+    outline: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+    background-color: #131419;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow:var(--BxSi);
+}
+
+.calculator{
+    margin: 0;
+    box-sizing: content-box;
+}
+.key {
+    float: left !important;
+    font-size: 15pt;
+    display: flex !important;
+    margin: -5%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.first-col, .second-col, .third-col, .fourth-col, .fifth-col
+{
+    padding: 10px;
+    white-space: wrap;
+    margin:-9.5px;
+    display: inline-block;
+    margin-top: 20px !important;
+    justify-content: space-between !important;
+}
+
+.button {
+    display: block;
+    padding-left: 40px;
+    min-height: 40px;
+    padding-right: 30px;
+    white-space: wrap;
+    word-wrap: break-word;
+    margin-top: 20px;
+    justify-content: space-between !important;
+}
+button {
+    position: relative;
+    margin-left: -54px !important;
+    min-width: 45px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    background: transparent;
+    color: #fff !important;
+    border: none;
+    border-radius: 10px !important;
+    height: 45px;
+    outline: none;
+    font-weight: bold !important;
+    font-size: 14pt !important;
+    box-shadow: var(--BxS);
+}
+.btn-work
+{
+    color:#ff6a00 !important;
+}
+
+.btn-equal
+{
+    height: 120px !important;
+    color:#ff6a00 !important;
+    
+}
+button:focus {
+    cursor: pointer;
+    outline: none !important;
+    border: none !important;
+}
+
+button:active
+{
+    box-shadow:inset -3px -3px 10px rgb(255 255 255 / 5%),inset 3px 3px 15px rgb(0 0 0 / 50%);
+    outline: none !important;
+    border: none !important;
+				 
+}
+button:hover
+{
+    color: #ff6a00 !important;
+}
+.home 
+{
+    margin-top:382px;
+    margin-left:72px ;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+.menu
+{
+    margin-top: 392px;
+    margin-left:-275px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.back {
+    margin-top: 392px;
+    margin-left: 75px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+    
